@@ -5,7 +5,6 @@ const expressValidator = require('express-validator')
 
 let dummyCount = 0
 let temperatures = [];
-let oi= [0];
 
 const validate = [
     expressValidator.check('temperature').isLength({min: 1}).withMessage('Field temperature can not be null')
