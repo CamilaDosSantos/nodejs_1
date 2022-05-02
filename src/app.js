@@ -20,17 +20,11 @@ server.get('/', (req, res) => {
 
 server.use((req, res) => res.status(404).sendFile(path.join(__dirname, "views", "404.html")));
 
-const main = async () => {
-  await mongoose.connect(`mongodb+srv://camila:santos_098@cluster0.rc7nj.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`);
-  
-
-
+async function main() {
+    await mongoose.connect('mongodb+srv://camila:santos_098@cluster0.rc7nj.mongodb.net/myFirstDatabase?retryWrites=true&w=majority');
+    server.listen(port, (req, res) => {
+        console.log(`Server rodando na porta ${port}`);
+    })
 }
 
-main()
-.then(() => {
-    server.listen(port, () => {
-        console.log(`server running on port ${port}`)
-      })
-})
-.catch(err => console.log(err));
+main().catch(err => console.log(err));

@@ -8,6 +8,16 @@ const validate = [
     expressValidator.check('temperature').isLength({min: 1}).withMessage('Field temperature can not be null'),
     expressValidator.check('temperature').isNumeric().withMessage('Field temperature should be a number')
 ]
+const user = 'Camila'; 
+const pass = '123';
+
+const auth = (req, res, next) => {
+
+    if (req.header('username') != user || req.header('password') != pass){
+        return res.status(401).send()
+    }
+    next();
+}
 
 router.get('/', (req, res) => {
     Temperature.find().then(temperatures => {
