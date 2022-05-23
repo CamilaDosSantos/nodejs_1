@@ -6,7 +6,7 @@
 
 1. Pesquisar sobre o que é JWT (Json Web Token) e Cookies para transporte de dados, descrever.
 
- Para fazer o transporte de dados efeito em uma requisição onde por exemplo pode conter, como por exemplo endereço de e-mail e senha, que será o corpo da requisição de uma API com esses dados essociados pelo cliente e tenha sido autenticados no servidor, este  criará um token JWT que é criptografado em algorimico que é salvo geralmente em um local Store, e depois envia por que la no servidor ele tem um script uma função de discriptografar ele consegue extrair as informações do token por isso que fica só la no backend e o cliente não tem acesso para não permitir ecesso de hachers por exemplo, pra que os usuarios tenham privacidade em seus dados pessoais colocados la.
+ -Para fazer o transporte de dados efeito em uma requisição onde por exemplo pode conter, como por exemplo endereço de e-mail e senha, que será o corpo da requisição de uma API com esses dados essociados pelo cliente e tenha sido autenticados no servidor, este  criará um token JWT que é criptografado em algorimico que é salvo geralmente em um local Store, e depois envia por que la no servidor ele tem um script uma função de discriptografar ele consegue extrair as informações do token por isso que fica só la no backend e o cliente não tem acesso para não permitir ecesso de hachers por exemplo, pra que os usuarios tenham privacidade em seus dados pessoais colocados la.
 
 2. Atualizar o sistema de autenticação básico da ultima aula para utilizar JWT. (Procurar tutoriais como por exemplo: https://www.luiztools.com.br/post/autenticacao-json-web-token-jwt-em-nodejs/) e implementar a sua solução.
 
@@ -16,8 +16,9 @@
     PARTE 2 (Na próxima aula começaremos estudar programação orientada a objetos e posteriormente Java)
 
 4. Pesquisar sobre POO (Programação Orientada a Objetos). O que é POO ?
--Programação Orientada a Objetos é um modelo de análise, projeto e programação de software baseado na composição e interação entre diversas unidades chamadas de 'objetos'.
+-É uma aproximação entre o mundo real e o mundo virtual,através da criação e interação entre objetos, atributos, códigos, métodos, entre outros.
 6. Quais as diferenças entre programação estruturada e programação orientada a objetos ?
+-Voltada aos conceitos de classes e herança. 
 
 7. Quais linguagens estruturadas e quais linguagens orientadas a objetos ?
 8. O que são classes e o que são objetos ?
