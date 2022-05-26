@@ -10,11 +10,11 @@ class Animal {
 
     }
     emitirSom() {
-        console.log("Implelass cachorro extends Animal {
+        console.log(`Implelass cachorro extends Animal `);
         return this.#cor;// parametro 
 
     }
-    setCor() { }
+    
 }
 
 
@@ -40,9 +40,8 @@ class Animal {
 
 // console.log("Iniciando APP");
 
-+
-// Cachorro.js
 
+// Cachorro.js
 
 class cachorro extends Animal {
     contrutor(cor, peso) {
