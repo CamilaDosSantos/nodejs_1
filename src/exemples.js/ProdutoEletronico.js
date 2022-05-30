@@ -18,7 +18,7 @@ class ProdutoEletronico {
         this.#botoes= botoes;
         this.#led=led;
     }
-    emitirLigaLed() {
+    emitirLigaLed() { 
         console.log("LED LIGA");
     }
     getNome() {

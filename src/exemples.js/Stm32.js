@@ -1,6 +1,7 @@
 const ProdutoEletronico  = require('./ProdutoEletronico.js');
-
+  
 class Stm32 extends ProdutoEletronico {
+    #debug
     constructor(nome, processador, memoria, bits, QUantidade_de_pinos, botoes, led){
         super(nome, processador, memoria, bits, QUantidade_de_pinos, botoes, led);
     }

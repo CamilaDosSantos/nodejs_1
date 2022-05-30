@@ -1,6 +1,7 @@
 const ProdutoEletronico  = require('./ProdutoEletronico.js');
 
 class Esp32 extends ProdutoEletronico {
+    #wifi
     constructor(nome, processador, memoria, bits, QUantidade_de_pinos, botoes, led){
         super(nome, processador, memoria, bits, QUantidade_de_pinos, botoes, led);
     }
