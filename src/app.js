@@ -20,7 +20,7 @@ server.get('/', (req, res) => {
 })
 server.use((req, res) => res.status(404).sendFile(path.join(__dirname, "views", "404.html")));
 async function main() {
-    await mongoose.connect(`mongodb+srv://${process.env.MY_USER}:${process.env.MY_PASSWORD}@cluster0.mxpes.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`);
+    await mongoose.connect(`mongodb+srv://${process.env.user}:${process.env.password}@cluster0.mxpes.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`);
     server.listen(port, (req, res) => {
         console.log(`Server rodando na porta ${port}`);
     })
